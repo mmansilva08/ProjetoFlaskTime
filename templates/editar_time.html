@@ -1,0 +1,34 @@
+{% extends "padrao.html" %}
+
+{% block conteudo %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form method="post">
+                <fieldset>
+                    <legend>Editar Informações do Time</legend>
+
+                    <div class="mb-3">
+                        <label for="nome">Nome: </label>
+                        <input type="text" name="nome" class="form-control" id="nome" value="{{ time.nome_time }}">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="estado">Estado: </label>
+                        <input type="text" name="estado" class="form-control" id="estado" value="{{ time.estado_time }}">
+                    </div> 
+                
+                    <div class="mb-3">
+                        <label for="apelido">Apelido</label>
+                        <input type="text" name="apelido" class="form-control" id="apelido" value="{{ time.apelido_time }}">
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-warning">Atualizar</button>
+                    </div>    
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

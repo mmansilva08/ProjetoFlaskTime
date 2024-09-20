@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus S</title>
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+
+    <h2>Times do Brasil</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Musica</th>
+                <th>Show</th>
+                <th>Data</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for banda in lista %}
+            <tr>
+                <td>{{ banda.nome_banda }}</td>
+                <td>{{ banda.musica }}</td>
+                <td>{{ banda.show }}</td>
+                <td>{{ banda.data }}</td>
+                <td>{{ banda.cidade }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+</body>
+</html>
