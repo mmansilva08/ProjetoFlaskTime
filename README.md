@@ -1,5 +1,7 @@
 <h1 align="center">Projeto Flask com Login, Cadastro e CRUD</h1> <p align="center"> 
-  
+
+
+
   Este é um projeto de aplicação web desenvolvido com o framework <strong>Flask</strong>.
   O projeto inclui funcionalidades de login, cadastro de usuários e operações CRUD (Criar, Ler, Atualizar e Excluir) para gerenciar informações de usuários. </p>
 
